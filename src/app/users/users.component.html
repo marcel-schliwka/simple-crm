@@ -1,0 +1,32 @@
+<mat-card>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>First Name</th>
+      <th>E-Mail</th>
+      <th>Phone Number</th>
+      <th>Address</th>
+      <th>ZIP Code</th>
+      <th>City</th>
+    </tr>
+    <tr *ngFor="let user of users | async">
+      <td>{{ user.name }}</td>
+      <td>{{ user.firstName }}</td>
+      <td>{{ user.mail }}</td>
+      <td>{{ user.phone }}</td>
+      <td>{{ user.street }}</td>
+      <td>{{ user.zipCode }}</td>
+      <td>{{ user.city }}</td>
+    </tr>
+  </table>
+</mat-card>
+
+<button
+  mat-fab
+  color="primary"
+  aria-label="Example icon button with a delete icon"
+  class="add_user"
+  (click)="openDialog()"
+>
+  <mat-icon>add</mat-icon>
+</button>

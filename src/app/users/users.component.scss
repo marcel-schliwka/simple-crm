@@ -1,0 +1,29 @@
+table {
+  border-collapse: collapse;
+
+  th {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 18px;
+    text-align: start;
+    border-bottom: 1px solid white;
+  }
+
+  tr {
+    border-bottom: 1px solid white;
+
+    &:last-child {
+      border: unset;
+    }
+  }
+  td {
+    padding-left: 18px;
+    height: 48px;
+  }
+}
+
+.add_user {
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+}
